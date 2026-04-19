@@ -1,7 +1,9 @@
 {
   "version": 2,
   "framework": "nextjs",
-  "regions": ["iad1"],
+  "regions": [
+    "iad1"
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
@@ -36,12 +38,6 @@
           "value": "camera=(), microphone=(), geolocation=(), browsing-topics=()"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!api|_next|_vercel|favicon.ico|.*\\..*).*)",
-      "destination": "/"
     }
   ]
 }
